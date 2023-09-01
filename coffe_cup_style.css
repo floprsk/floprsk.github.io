@@ -1,0 +1,161 @@
+
+.cup
+{
+    position: relative;
+    height: 300px;
+    width: 280px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+.top
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    top: -30px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+
+}
+.circle
+{
+    position: relative;
+    top: -163px; /*for animation here: -163px*/
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 50px;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-sizing:border-box;
+    overflow:scroll; /*for animation here: hidden*/
+    cursor: pointer;
+}
+
+.circle:hover span {
+    visibility:hidden;
+}
+.coffe
+{
+    background: linear-gradient(#a57840, #432a06);
+    position: relative;
+    top: 52px; /*for animation here: 20px*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    cursor: pointer;
+
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+.handle
+{
+    position: absolute;
+    border: 25px solid #d9d9d9;
+    top: 40px;
+    right: -70px;
+    width: 160px;
+    height: 180px;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+.plate
+{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: -50px;
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7 );
+    box-shadow: 0px 35px 35px  rgba(0,0,0,0.2);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.plate::before
+{
+    content:'';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom:10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+}
+.plate::after
+{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    left: 30px;
+    bottom: 20px;
+    background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent,transparent);
+    border-radius: 50%;
+}
+
+.vapour
+{
+    visibility:hidden;
+    display:flex;
+    opacity:0;
+    position:relative;
+    z-index: -1;
+    padding: 0 20px;
+    transition-property: all;
+    transition-duration: 5s;
+}
+.vapour span
+{
+    display:block;
+    position:relative;
+    bottom: 50px;
+    margin: 0 2px 50px;
+    min-width:8px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+    filter: blur(15px);
+    animation-delay: calc(var(--i)* -0.7s);
+}
+
+.vapour.heated {
+    visibility: visible;
+    opacity:1;
+}
+
+
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        transform: translateY(-150px) scaleX(5);
+
+    }
+    95%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(-300px) scaleX(10);
+    }
+}
