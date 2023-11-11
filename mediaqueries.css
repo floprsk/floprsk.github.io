@@ -25,7 +25,7 @@
     }
 
     .vapour {
-        visibility: hidden;
+        display:none;
     }
 }
 

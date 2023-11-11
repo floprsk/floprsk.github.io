@@ -162,6 +162,15 @@ nav{
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+section{
+  min-height: 100vh;
+  margin-top:10rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  min-height: 100vh;
+}
+
 .coffe_section {
   margin-top:5rem;
   display:flex;
@@ -171,7 +180,6 @@ nav{
 }
 
 .painting {
-  margin-top:20rem;
   margin-left:7rem;
   margin-right: 5rem;
   padding: 1.5rem;
@@ -180,6 +188,11 @@ nav{
   background-color: rgb(70,50, 50);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 1rem;
+}
+
+.scratch_container iframe{
+  border-radius: 1rem;
+
 }
 
 #credits {
