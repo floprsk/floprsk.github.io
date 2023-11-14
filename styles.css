@@ -416,8 +416,8 @@ section{
 
 article {
   display:flex;
-  align-items:start;
-  justify-content: space-around;
+  align-items:center;
+  justify-content: space-between;
   gap:1rem;
   padding-left: 1rem;
   padding-right:1rem;
