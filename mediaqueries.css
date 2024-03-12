@@ -9,24 +9,11 @@
         max-width:100vw;
     }
 
-    .general_container,
-     .about_section,
-        .experience_section,
-            .coffe_section,
-                .contact_section
-        {
-        display:flex;
-        max-width:100vw;
-        flex-wrap: wrap;
-    }
-
-    .experience_section{
-        margin-top: 25rem;
-    }
-
-    .vapour {
+    /* vapour bugs for mobile devices */
+    .vapour{
         display:none;
     }
+
 }
 
 
