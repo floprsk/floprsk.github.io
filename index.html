@@ -44,26 +44,30 @@
             </nav>
       
             <!-- Work Scene -->
-            <spline-viewer loading-anim-type="spinner-big-light" url="https://prod.spline.design/u8n4W-GRxLE-Kcd0/scene.splinecode"></spline-viewer>   
-                             
-        <section class="general_section">
-          <div class="general_container">
-            <img src="images\Passbild_Herbst2023_hell.jpg" width="300rem" />
-            <div class="info_container">
-              <p id="one">Hello I'm</p>
-              <p id="two">Florian Purschke</p>
-              <p id="three">Age 20 </p>
-              <div class="buttons">
-                <a href="#contact"><button id="two">Contact</button></a>
-              </div>
-            </div>
-          </div>
-        </section>
+            <section class="work_scene">
+              <spline-viewer loading-anim-type="spinner-big-light" url="https://prod.spline.design/u8n4W-GRxLE-Kcd0/scene.splinecode"></spline-viewer>  
+              <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.67/build/spline-viewer.js"></script>
+            </section>
+
+           
+            <section class="general_section">
+              <img src="images\Passbild_Herbst2023_hell.jpg" width="300rem" />
+                <div class="info_container">
+                  <p id="one">Hello I'm</p>
+                  <p id="two">Florian Purschke</p>
+                  <p id="three">Age 20 </p>
+                  <div class="buttons">
+                    <a href="#contact"><button id="two">Contact</button></a>
+                  </div>
+                </div>
+            </section>
 
         <section id="about" class="about_section">
         
         <!-- Head Scene -->
-        <spline-viewer stlye="width:200rem; height:200rem; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" url="https://prod.spline.design/xmOv-pd0BERNWhtl/scene.splinecode"></spline-viewer>
+        <div class="head_scene_container">
+        <spline-viewer url="https://prod.spline.design/xmOv-pd0BERNWhtl/scene.splinecode"></spline-viewer>
+        </div>
 
           <div class="about_info_container">
               <p>more Information</p>
@@ -81,6 +85,8 @@
               <article>Hi, i'm Florian and im 20 years old. Im interested in computer science and web development.
               Two other passions of mine are playing football (soccer) and fitness.</article>
           </div>
+
+
         </section>
 
         <section id="experience" class="experience_section">
@@ -201,19 +207,10 @@
               </a>
               </div>
             </div>
-        </section>
 
-        <section class="scratch_section">
-          <div class="scratch_container">
-            <span><h3>Click the green flag to play my little Scratch game.</h3></span>
-          </br>
-          </br>
-            <iframe src="https://scratch.mit.edu/projects/918460762/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>          
-            <span><p>Right Arrow to continue</p></span>
-            <span><p>W,A,S,D to move</p></span>
-            <span><p>Space to shoot<p></span>
-          </div>
-        </section>
+          </section>
+
+
 
         <section id="projects" class="coffe_section">
           <div class="painting">
@@ -257,6 +254,18 @@
             </div>
           </div>
         </div>
+        </section>
+
+        <section class="scratch_section">
+          <div class="scratch_container">
+            <span><h3>Click the green flag to play my little Scratch game.</h3></span>
+          </br>
+          </br>
+            <iframe src="https://scratch.mit.edu/projects/918460762/embed" allowtransparency="true" width="390" height="402"  frameborder="0" scrolling="no" allowfullscreen style="border-radius:10px;"></iframe>          
+            <span><p>Right Arrow to continue</p></span>
+            <span><p>W,A,S,D to move</p></span>
+            <span><p>Space to shoot<p></span>
+          </div>
         </section>
 
 

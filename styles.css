@@ -164,11 +164,15 @@ nav{
 /* Nav over */
 
 
-
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:10rem;
+  width: 100vw;
+}
 
 
 .coffe_section {
-  margin-top:5rem;
   display:flex;
   justify-content: center;
   align-items:center;
@@ -176,7 +180,6 @@ nav{
 }
 
 .painting {
-  margin-top:20rem;
   margin-left:7rem;
   margin-right: 5rem;
   padding: 1.5rem;
@@ -234,8 +237,8 @@ nav{
 }
 
 
-.general_container {
-  margin-top:10rem;
+
+.general_section {
   display:flex;
   gap:2rem;
   align-items: center;
@@ -244,13 +247,13 @@ nav{
   min-width: fit-content;
 }
 
-.general_container img {
+.general_section img {
   border-radius: 50rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   transition: 0.2s ease-in-out;
 }
 
-.general_container img:hover {
+.general_section img:hover {
   scale: 103%;
 }
 
@@ -309,9 +312,8 @@ nav{
 }
 
 .about_section {
-  margin-top:10rem;
   display:flex;
-  min-height:100vh;
+  flex-direction: row;
   justify-content: center;
   align-items:center;
   gap: 2rem;
@@ -320,7 +322,7 @@ nav{
 
 .about_section img {
   border-radius: 1rem;
-  transition: 1s ease
+  transition: 1s ease;
 }
 
 .about_section img:hover {
@@ -328,10 +330,18 @@ nav{
   transition: 1s ease;
 }
 
+.head_scene_container{
+  border: solid red;
+  flex: 1;
+  border-radius: 10px;
+}
+
 .about_info_container {
   display:flex;
   justify-content: center;
   align-items:center;
+  flex:1;
+  width: 30vw;
 }
 
 .about_info_container h1 {
@@ -371,21 +381,18 @@ nav{
 }
 
 .experience_section {
-  margin-top:20rem;
   display:flex;
   align-items:center;
   justify-content:center;
   flex-direction:column;
-  width: 100vw;
-  min-height:100vh;
+  min-height: 100vh;
+  
 }
 
 .experience_components {
   display:flex;
   flex-direction: row;
   padding:1rem;
-  gap: 1rem;
-  width: 100vw;
   height:fit-content;
   justify-content:space-around;
 }
@@ -448,7 +455,6 @@ article {
 .frontend_container, .backend_container, .git_container {
   width: fit-content;
   flex-grow:1;
-  height: fit-content;
 }
 
 .git_container {
@@ -465,7 +471,6 @@ article {
 
 
 .contact_section {
-  margin-top:10rem;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -482,6 +487,8 @@ article {
 
 .scratch_section {
   text-align: center;
+  min-height: 100vh;
+  border-radius:10px;
 }
 
 
@@ -540,7 +547,6 @@ footer p{
 /*Card*/
 
 .carousel_container {
-  margin-top: 2rem;
   display: flex;
   height: 100%;
   justify-content: center;
