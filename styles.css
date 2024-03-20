@@ -168,7 +168,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin-top:10rem;
-  width: 100vw;
+  max-width: fit-content;
 }
 
 
@@ -331,7 +331,6 @@ section {
 }
 
 .head_scene_container{
-  border: solid red;
   flex: 1;
   border-radius: 10px;
 }
