@@ -7,11 +7,24 @@
         display:flex;
         gap: 2rem;
         max-width:100vw;
+        min-height: 5rem;
     }
 
     /* vapour bugs for mobile devices */
     .vapour{
         display:none;
+    }
+
+    .work_scene {
+        display:none
+    }
+
+    .work_filler {
+        display:flex;
+    }
+
+    .experience_section{
+        margin-top:75vh;
     }
 
 }
